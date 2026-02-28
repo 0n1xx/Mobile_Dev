@@ -6,35 +6,6 @@ Each project focuses on core iOS concepts including MVC architecture, networking
 
 # Projects
 
-## EggTimer:
-
-A simple timer application that allows users to select egg hardness (Soft, Medium, Hard) and starts a countdown with a progress bar and sound notification.
-
-**Key Concepts:**
-- Timer class
-- Progress bar updates
-- AVFoundation (sound playback)
-- MVC architecture
-- UI state management
-
-Folder: `EggTimer`
-
----
-
-## BMI Calculator:
-
-An interactive BMI calculator that computes body mass index based on height and weight and provides health advice.
-
-**Key Concepts:**
-- MVC architecture
-- Struct-based modeling
-- Data passing between ViewControllers
-- Dynamic UI updates
-
-Folder: `BMI-Calculator-iOS13`
-
----
-
 ## Clima – Weather App:
 
 A weather application that fetches real-time weather data using a public API and displays current conditions for a selected city or the user's location.

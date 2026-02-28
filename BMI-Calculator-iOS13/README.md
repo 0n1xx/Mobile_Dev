@@ -1,27 +1,92 @@
+# BMI Calculator iOS App
 
-![App Brewery Banner](Documentation/AppBreweryBanner.png)
+A simple and clean iOS application built with **Swift** and **UIKit** that calculates a user’s Body Mass Index (BMI) based on height and weight input.  
+The app provides instant feedback along with health advice depending on the calculated BMI category.
 
-#  BMI Calculator
+## Features:
 
-## Our Goal
+- Calculate BMI based on height and weight
+- Instant result display
+- Health advice based on BMI category
+- Color-coded result screen
+- Clean and user-friendly interface
+- MVC architecture implementation
 
-The goal of this tutorial is to learn more about Optionals, solidify your understanding of the MVC design pattern and to introduce the concept of Classes. We’ll compare objects created from classes with instances of Structs that we learnt about earlier. 
+---
 
-## What you will create
+## Project Architecture:
 
-By the end of the module, you will have made a Body Mass Index calculator. Based on the user’s weight and height it will calculate their body mass and give a piece of health advice depending on whether if they have eaten too many pies or if they need to eat more pies. 
+The project follows the **Model–View–Controller (MVC)** design pattern for clear separation of concerns.
 
-## What you will learn
+### Model
+- `BMI.swift` – Represents the BMI data model.
+- `CalculatorBrain.swift` – Contains BMI calculation logic and advice selection.
 
-* How to create multi-screen apps with animated navigation.
-* Optional binding, optional chaining and the nil coalescing operator.
-* How to create classes and difference between classes and structs. 
-* Pass by value vs. pass by reference. 
-* Formatting Strings. 
-* Color literals.
+### View
+- `Main.storyboard` – Defines the UI layout.
+- `Assets.xcassets` – Images and visual assets.
+
+### Controller
+- `CalculateViewController.swift` – Handles user input and triggers calculation.
+- `ResultsViewController.swift` – Displays the calculated BMI result and advice.
+
+---
+
+## Technologies Used:
+
+- Swift
+- UIKit
+- MVC Design Pattern
+- Xcode
+- iOS 13+
+
+---
+
+## How It Works:
+
+1. The user adjusts height and weight using sliders.
+2. The app calculates BMI using the formula:
+BMI = weight (kg) / height² (m²)
 
 
+3. Based on the calculated value:
+- The BMI number is displayed.
+- Health advice is shown.
+- The background color changes depending on the BMI category.
 
->This is a companion project to The App Brewery's Complete App Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
+---
 
-![End Banner](Documentation/readme-end-banner.png)
+## Installation & Running:
+
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/BMI-Calculator-iOS13.git
+```
+
+## Project Structure:
+```bash
+BMI-Calculator-iOS13/
+│
+├── Model/
+│   ├── BMI.swift
+│   └── CalculatorBrain.swift
+│
+├── Controller/
+│   ├── CalculateViewController.swift
+│   └── ResultsViewController.swift
+│
+├── View/
+│   └── Main.storyboard
+│
+├── Assets.xcassets
+├── AppDelegate.swift
+└── SceneDelegate.swift
+```
+
+## Learning Purpose:
+This project was created to practice:
+- Implementing MVC architecture
+- Struct-based data modeling in Swift
+- Passing data between view controllers
+- Performing calculations and updating UI dynamically
+- Managing navigation flow in an iOS application

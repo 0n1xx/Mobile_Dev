@@ -3,7 +3,7 @@
 A simple and interactive quiz application built with **Swift** and **UIKit** following the **MVC (Model–View–Controller)** design pattern.  
 The app presents multiple-choice questions, tracks user progress, and provides instant feedback.
 
-## Features
+## Features:
 
 - Multiple-choice quiz questions
 - Real-time answer validation
@@ -13,7 +13,7 @@ The app presents multiple-choice questions, tracks user progress, and provides i
 - MVC architecture implementation
 ---
 
-## Project Architecture
+## Project Architecture:
 
 The project follows the **MVC pattern** to maintain clean code structure and separation of concerns.
 
@@ -37,7 +37,7 @@ The project follows the **MVC pattern** to maintain clean code structure and sep
 - MVC Design Pattern
 ---
 
-## How It Works
+## How It Works:
 
 1. The app loads a predefined list of questions.
 2. The user selects one of the answer options.
@@ -49,7 +49,7 @@ The project follows the **MVC pattern** to maintain clean code structure and sep
 
 ---
 
-## Installation & Running
+## Installation & Running:
 
 1. Clone the repository:
    ```bash

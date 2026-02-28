@@ -1,11 +1,3 @@
-//
-//  WeatherData.swift
-//  Clima
-//
-//  Created by Vlad Sakharov on 2026-02-17.
-//  Copyright © 2026 App Brewery. All rights reserved.
-//
-
 import Foundation
 
 struct WeatherData: Codable {

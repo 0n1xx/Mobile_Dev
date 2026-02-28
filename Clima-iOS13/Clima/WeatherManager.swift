@@ -1,11 +1,3 @@
-//
-//  WeatherManager.swift
-//  Clima
-//
-//  Created by Vlad Sakharov on 2026-02-16.
-//  Copyright © 2026 App Brewery. All rights reserved.
-//
-
 import Foundation
 import _LocationEssentials
 

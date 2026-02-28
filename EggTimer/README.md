@@ -1,27 +1,86 @@
-![App Brewery Banner](Documentation/AppBreweryBanner.png)
+# EggTimer iOS App:
 
-# Egg Timer
+A simple and intuitive iOS application built with **Swift** and **UIKit** that helps users cook eggs perfectly by selecting a desired level of doneness.  
+The app uses a timer mechanism with a progress bar and sound notification when the cooking time is complete.
 
-## Our Goal
+## Features:
 
-This module will be a mix of tutorials and challenges. Most importantly, we want you to get comfortable with looking up how to do something you've never done before. In certain places of this module, you’ll need to follow the 5 step process you learnt in the Xylophone module and use Google search, StackOverflow and Apple Documentation to make your code do what you want it to. But there are also other parts where we’ll take you step-by-step through new Swift programming concepts. 
+- Select egg hardness level (Soft, Medium, Hard)
+- Built-in countdown timer
+- Animated progress bar
+- Sound notification when the timer finishes
+- Clean and user-friendly interface
+- MVC architecture
 
-## What You'll Make
+---
 
-You’ll be building a beautiful egg timer app to boil your eggs to perfection depending on how you prefer your eggs. 
+## Project Architecture:
 
-## What you will learn
+The project follows the **Model–View–Controller (MVC)** design pattern to ensure clean structure and separation of logic.
 
-* Swift Collection types - Dictionaries
-* The Swift Timer API
-* Conditional statements - IF/ELSE
-* Conditional statements - Switch
-* Functions with outputs
-* How to use the ProgressView
+### Model
+- `EggTimer.swift` – Contains cooking time data and timer logic.
 
+### View
+- `Main.storyboard` – Defines the UI layout.
+- `Assets.xcassets` – App images and visual assets.
 
+### Controller
+- `ViewController.swift` – Handles user interaction, timer updates, and UI changes.
 
->This is a companion project to The App Brewery's Complete App Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
+---
 
-![End Banner](Documentation/readme-end-banner.png)
+## Technologies Used:
 
+- Swift
+- UIKit
+- AVFoundation (for sound playback)
+- Timer class
+- Xcode
+- iOS 13+
+
+---
+
+## How It Works:
+
+1. The user selects the desired egg hardness level.
+2. The app starts a countdown timer based on predefined cooking times.
+3. The progress bar updates dynamically as time passes.
+4. When the timer reaches zero:
+   - A sound is played.
+   - The progress bar completes.
+   - The user is notified that the egg is ready.
+
+---
+
+## Installation & Running:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/EggTimer.git
+   ```
+## Project Structure:
+```bash
+EggTimer/
+│
+├── Model/
+│   └── EggTimer.swift
+│
+├── Controller/
+│   └── ViewController.swift
+│
+├── View/
+│   └── Main.storyboard
+│
+├── Assets.xcassets
+├── AppDelegate.swift
+└── SceneDelegate.swift
+```
+
+## Learning Purpose:
+- This project was created to practice
+- Working with the Timer class
+- Updating UI elements over time
+- Playing audio using AVFoundation
+- Structuring apps using MVC
+- Managing app state and user interaction
